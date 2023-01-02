@@ -94,13 +94,13 @@ var bingoItems = [
     "Racer enters Bottom of the Well without ZL *OR* bombs",
     "Racer save-scums to preserve keys",
     "Light Arrows hint from Ganondorf *REQUIRED*",
-    "Racer completes either Frogs check",
+    "Racer plays any song for frogs",
     "Racer uses Bombchus against King Dodongo",
     "Racer buys a Shield",
     "back of lake hints read",
     "#FreetheGorons - talk to a goron in fire temple",
     "Dancing dad check completed",
-    "Hit the hint stone",
+    "Hit the hint stone/Check the time",
     //"complete an adult (vanilla) dungeon without a logically required item", (redundant with "breaks out of logic"?)
     "Enabled trick logically required",
     "Racer breaks out of logic", //freebie? (gets item they shouldn't logically have yet)
@@ -113,5 +113,10 @@ var bingoItems = [
     "2+ dungeon path for logical forest access",
     "10 skulls has progression/useful item",
     "Dungeon Boss Key is in vanilla location",
+    "Racer goes LLR -> Kokiri -> SFM as child", 
+    "Song in GY is Nocturne", 
+    "Storms Grotto required",
+    "Epona gets stuck on geometry",
+    "Racer scums chus/keys/other items"
     // For compatibility reasons, the very last item in the list should not have a comma after it.
 ];
