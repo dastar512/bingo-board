@@ -10,7 +10,7 @@ var bingoItems = [
     "Wasteland check completed",
     "GTG Toilet (sunken silver rupees) check completed",
     "Emotional Support Fish (fish in a bottle) located",
-    "Commentators make a pun", //puts intention in charge of bingo rather than luck
+    "Commentators make a pun", 
     "Richard's mom is a cheapskate (ammo or <50 rupees)",
     "OoT is picked up",
     "Morpha Quick Grab",
@@ -19,9 +19,10 @@ var bingoItems = [
     "Deku Shield burns away",
     "Link gets frozen",
     "Racer forced to wait for Time of Day",
-    "Spirit Temple key logic",
-    "Water Temple key logic", //needs to be more fleshed out
-    "Fire Temple key logic",
+    "Item determined to be path specifically for a dungeon's key logic",
+    // "Spirit Temple key logic",
+    // "Water Temple key logic", needs to be more fleshed out
+    // "Fire Temple key logic",
     "Haunted Wasteland is foolish",
     "Hyrule Castle is foolish",
     "Outside Ganon's Castle is foolish",
@@ -36,18 +37,18 @@ var bingoItems = [
     "Link dies to an Iron Knuckle",
     "Link dies to the burn timer",
     "Link dies to the drown timer",
-    "Missing *UNIQUE* Always Hint at 90 minutes", //change to 60?
-    "Missing *UNIQUE* Path Hint at 90 minutes", //change to 60?
+    "Missing *UNIQUE* Always Hint at 60 minutes", 
+    "Missing *UNIQUE* Path Hint at 60 minutes",
     "Hard AD discovered after 60 minutes or more",
-    //"Racer gets bailed out", need to define better
+    //"Racer gets bailed out", finds substitute item for to make time back
     "Dark Link finds a way",
-    "Foolish Hint in the *same* Foolish location", 
+    //"Foolish Hint in the *same* Foolish location", 
     "Multiple Path hints leading to same item",
     "Oops, All Dungeons!",
     "Oops, World Tour!",
     "Racer reverses through Haunted Wasteland",
     "Mido Skip",
-    "King Zora (\"Mweep\") Skip",
+    //"King Zora (\"Mweep\") Skip",
     "Chat guesses TCG correctly",
     "Link rides a bean plant",
     "Link digs a Skulltulla out of a soil patch",
@@ -63,7 +64,7 @@ var bingoItems = [
     "Fire Arrows located",
     "Ice Arrows located",
     "Stone of Agony located", 
-    //"Lens of Truth located", //disable in league settings
+    "Lens of Truth located", //disable in league settings
     "Validation Rupee/GREG located",
     "Winner PoH located",
     "Meme% located",
@@ -77,7 +78,7 @@ var bingoItems = [
     "Dampé hits a fireball",
     "Chicken blocks Bombchu bowling",
     "Skull Mask check complete",
-    "Racer sees Darunia's dance (plays song other than Saria's)",
+    //"Racer sees Darunia's dance (plays song other than Saria's)",
     "Racer mis-times Goron Pot bomb throw",
     "Gold Gauntlets are bait",
     "Bait of the Well (no useful item in Well)",
@@ -100,13 +101,17 @@ var bingoItems = [
     "#FreetheGorons - talk to a goron in fire temple",
     "Dancing dad check completed",
     "Hit the hint stone",
-    "complete an adult (vanilla) dungeon without a logically required item",
+    //"complete an adult (vanilla) dungeon without a logically required item", (redundant with "breaks out of logic"?)
     "Enabled trick logically required",
-    "Racer breaks out of logic", //freebie?
+    "Racer breaks out of logic", //freebie? (gets item they shouldn't logically have yet)
     "Nice rupee count called out",
     "Song is path item",
     "Kakariko is path location",
-    "Kakariko is foolish location",
-    "Bombchus found before first bomb bag (any racer)"
+    //"Kakariko is foolish location", (can't be in S6, right?)
+    "Jabu is foolish",
+    "Bombchus found before first bomb bag (any racer)",
+    "2+ dungeon path for logical forest access",
+    "10 skulls has progression/useful item",
+    "Dungeon Boss Key is in vanilla location",
     // For compatibility reasons, the very last item in the list should not have a comma after it.
 ];
