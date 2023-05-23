@@ -119,6 +119,7 @@ var bingoItems = [
     "Storms Grotto required",
     "Epona gets stuck on geometry",
     "Racer scums chus/keys/other items",
-    "Racer enters Go mode under 2 hours"
+    "Racer enters Go mode under 2 hours",
+    "All three magic arrows located before bow"
     // For compatibility reasons, the very last item in the list should not have a comma after it.
 ];
