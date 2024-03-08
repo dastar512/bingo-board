@@ -21,7 +21,7 @@ var bingoItems = [
     “Fifi says FRICK”,
     “Fifi says HUHH”,
     “Tempted to open cards”,
-    “Suggests sshrk or linkfan21 get banned”,
+    “Suggests ban on Linkfan or Sshrk”,
     “Fifi says linkydinky”,
     “Fifi bleeps out curse words”,
     “Hates on Overwatch”,
