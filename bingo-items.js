@@ -6,6 +6,7 @@ var bingoItems = [
     "Fifi says OH SHOOT",
     "Fifi has to poop",
     "Somebody drops 50 gifted",
+    "Accidental Swear",
     "Test ITEM 2"
     // For compatibility reasons, the very last item in the list should not have a comma after it.
 ];
