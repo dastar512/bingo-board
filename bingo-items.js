@@ -9,6 +9,7 @@ var bingoItems = [
     "fifiFeels",
     //"Fifi has to poop",
     "Somebody drops 10 gifted",
+    "forgot Todd",
     "Stunned silence",
     "Strimmer yells for mod attention",
     "Accidental Swear",
