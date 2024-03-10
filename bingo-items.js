@@ -41,6 +41,7 @@ var bingoItems = [
     "Fifi says nutsack",
     "Fifi apologizes for something",
     "Unlucky",
+    "Wudder",
     "Fifi pulls a chase card"
     // For compatibility reasons, the very last item in the list should not have a comma after it.
 ];
