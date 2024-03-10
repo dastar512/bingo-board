@@ -5,6 +5,7 @@ var bingoItems = [
     "Fifi says OH SHOOT",
     "Fifi has to poop",
     "Somebody drops 10 gifted",
+    "Stunned silence from generosity",
     "Strimmer yells for mod attention",
     "Accidental Swear",
     "fifiDinkDonk announcement",
