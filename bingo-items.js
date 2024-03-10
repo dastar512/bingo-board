@@ -1,7 +1,7 @@
 var bingoItems = [
 // Add bingo items to this list. If you must use the double quote character (") in an item, escape it like this: \"
     "Mic peak",
-    "Chat completes emote pyramid", 
+    //"Chat completes emote pyramid", 
     "Lyss gets donowalled",
     "Fifi says OH SHOOT",
     "Fifi has to poop",
