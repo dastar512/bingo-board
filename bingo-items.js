@@ -4,7 +4,10 @@ var bingoItems = [
     //"Chat completes emote pyramid", 
     "Lyss gets donowalled",
     "Fifi says OH SHOOT",
-    "Fifi has to poop",
+    "KAAAAAAAAAAAAAATTTTTTT",
+    "That's a bingo square???!!!",
+    "fifiFeels",
+    //"Fifi has to poop",
     "Somebody drops 10 gifted",
     "Stunned silence",
     "Strimmer yells for mod attention",
@@ -33,7 +36,7 @@ var bingoItems = [
     "Fifi says WOOOOOOW",
     //"Fifi says GOOOOOOD MOOORNING TO THE CHAAAAT”, (free)
     "Fifi calls someone a cutie",
-    "Fifi gets more coffee",
+    "Fifi needs more coffee",
     "Fifi says Ashes shut up",
     "Fifi says Let’s freakin go",
     "Fifi says I love this game",
@@ -42,6 +45,7 @@ var bingoItems = [
     "Fifi apologizes for something",
     "Unlucky",
     "Wudder",
+    "Scammed",
     "Fifi pulls a chase card"
     // For compatibility reasons, the very last item in the list should not have a comma after it.
 ];
