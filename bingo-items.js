@@ -6,6 +6,7 @@ var bingoItems = [
     "Forgot to split",
     "Lyss gets donowalled",
     "Fifi says OH SHOOT",
+    "CLUTCH MOMENT",
     "Fifi rolls low on DTTO",
     "Fifi blames Harrison for rigging the timer rolls",
     "KAAAAATTTTT",
