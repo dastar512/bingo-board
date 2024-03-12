@@ -8,6 +8,7 @@ var bingoItems = [
     "Fifi didn't know that was a bingo square",
     "fifiFeels",
     //"Fifi has to poop",
+    "50+ month resub",
     "100+ month resub",
     "10 sub bomb",
     "50 sub bomb",
