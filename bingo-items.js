@@ -3,6 +3,7 @@ var bingoItems = [
     //"Mic peak",
     //"Chat completes emote pyramid",
     "Legendary fish acquired",
+    "Forgot to split",
     "Lyss gets donowalled",
     "Fifi says OH SHOOT",
     "Fifi rolls low on DTTO",
