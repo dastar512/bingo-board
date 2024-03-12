@@ -4,7 +4,7 @@ var bingoItems = [
     //"Chat completes emote pyramid", 
     "Lyss gets donowalled",
     "Fifi says OH SHOOT",
-    "KAAAAAAAAAAAAAATTTTTTT",
+    "KAAAAAAAATTTTT",
     "That's a bingo square???!!!",
     "fifiFeels",
     //"Fifi has to poop",
