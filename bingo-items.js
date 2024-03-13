@@ -25,7 +25,7 @@ var bingoItems = [
     "fifiDinkDonk announcement",
     "Fifi thinks about eating ice cweam", 
     "Webby sits in Fifi’s lap",
-    "Fifi plays Barbie Horse Adventures",
+    "Fifi plays Barbie",
     "Damn RAT",
     "Fifi says What is this lobby",
     "Fifi says That guy’s cheating",
