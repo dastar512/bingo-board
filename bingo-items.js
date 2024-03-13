@@ -5,6 +5,7 @@ var bingoItems = [
     "Legendary fish acquired",
     "Custom fish acquired",
     "Forgot to split",
+    "Any PB",
     "Lyss gets donowalled",
     "Fifi says OH SHOOT",
     "CLUTCH MOMENT",
