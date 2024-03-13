@@ -7,7 +7,7 @@ var bingoItems = [
     "Lyss gets donowalled",
     "Fifi says OH SHOOT",
     "CLUTCH MOMENT",
-    "Fifi rolls low on DTTO",
+    "Fifi rolls <50 on DTTO",
     "Fifi blames Harrison for rigging the timer rolls",
     "KAAAAATTTTT",
     "Fifi didn't know that was a bingo square",
