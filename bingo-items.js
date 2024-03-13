@@ -11,6 +11,7 @@ var bingoItems = [
     "Fifi rolls <50 on DTTO",
     "Fifi blames Harrison for rigging the timer rolls",
     "KAAAAATTTTT",
+    "fifi drops a deez nuts",
     "Fifi didn't know that was a bingo square",
     "fifiFeels",
     "Fifi has to poop while queued for a match",
