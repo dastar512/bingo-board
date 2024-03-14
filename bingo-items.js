@@ -3,6 +3,7 @@ var bingoItems = [
     //"Mic peak",
     //"Chat completes emote pyramid",
     "Legendary fish acquired",
+    "Fifi gives into chat wanting to fish",
     "Custom fish acquired",
     "Forgot to split",
     "Any PB",
@@ -61,6 +62,7 @@ var bingoItems = [
     "Unlucky",
     "Wudder",
     "Scammed",
-    "Fifi pulls a chase card"
+    "Fifi pulls a chase card",
+    "Fifi sings where are the peepos"
     // For compatibility reasons, the very last item in the list should not have a comma after it.
 ];
