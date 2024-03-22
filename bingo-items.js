@@ -3,7 +3,7 @@ var bingoItems = [
     //"Mic peak",
     //"Chat completes emote pyramid",
     "Legendary fish acquired",
-    "Fifi gives into chat wanting to fish",
+    //"Fifi gives into chat wanting to fish",
     "Where's the audio?!?", //this happens in more than just apex, so i'm leaving it.
     //"Dead before round 1 closes",
     //"melee or push kill",
