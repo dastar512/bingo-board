@@ -2,7 +2,8 @@ var bingoItems = [
 // Add bingo items to this list. If you must use the double quote character (") in an item, escape it like this: \"
     //"Mic peak",
     //"Chat completes emote pyramid",
-    "Legendary fish acquired",
+    //"OOPS MY FINGER SLIPPED",
+    //"Legendary fish acquired",
     "Someone mentions taxes or an invoice",
     //"Fifi gives into chat wanting to fish",
     "Where's the audio?!?", //this happens in more than just apex, so i'm leaving it.
@@ -65,8 +66,8 @@ var bingoItems = [
     "Fifi says Let’s freakin go",
     "Fifi says I love this game",
     "Fifi says I hate this game",
-    "Fifi complains about Flamigo",
-    "Fifi complains about Mike",
+    //"Fifi complains about Flamigo",
+    //"Fifi complains about Mike",
     //"Fifi says nutsack",
     "Fifi apologizes for something",
     "Unlucky",
