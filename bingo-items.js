@@ -1,81 +1,118 @@
-var bingoItems = [
-// Add bingo items to this list. If you must use the double quote character (") in an item, escape it like this: \"
-    //"Mic peak",
-    //"Chat completes emote pyramid",
-    //"OOPS MY FINGER SLIPPED",
-    //"Legendary fish acquired",
-    "Someone mentions taxes or an invoice",
-    //"Fifi gives into chat wanting to fish",
-    "Where's the audio?!?", //this happens in more than just apex, so i'm leaving it.
-    "Dead before round 1 closes",
-    "melee or push kill",
-    "Clip-worthy headshot",
-    "Fifi is the current kill leader",
-    //"Custom fish acquired",
-    //"Forgot to split",
-    //"Any PB",
-    "Lyss gets donowalled",
-    "Fifi says OH SHOOT",
-    "CLUTCH MOMENT",
-    "Fifi rolls <50 on DTTO",
-    //"Fifi blames Harrison for rigging the timer rolls",
-    "KAAAAATTTTT",
-    "fifi drops a deez nuts",
-    "Fifi didn't know that was a bingo square",
-    "fifiFeels moment",
-    "Fifi has to poop while queued for a match",
-    "50+ month resub",
-    "100+ month resub",
-    "10 sub bomb",
-    "50 sub bomb",
-    //"forgot or yells at Toad", //any game with todd
-    //"Goalie Goalllll",
-    "Stunned silence",
-    "Strimmer yells for mod attention",
-    "Accidental Swear",
-    "fifiDinkDonk announcement",
-    "Fifi thinks about eating ice cweam", 
-    "Webby on stream",
-    //"Fifi plays Barbie",
-    "Damn RAT",
-    "Rat in the chat",
-    "Fifi forgets he's muted or unmuted",
-    "Fifi says What is this lobby",
-    "Fifi says That guy’s cheating",
-    "Fifi says nuts",
-    "Fifi says DUDE",
-    //"PAIN --- without love",
-    "Fifi offers A Kiss on the Lips", 
-    "Fifi says FRICK",
-    "Fifi says HUHH",
-    //"Tempted to open cards",
-    "Fifi jokingly requests a ban",
-    "Fifi says linkydinky",
-    "Fifi bleeps out curse words",
-    "Hates on Overwatch",
-    //"Chauncey is unhelpful",
-    "Questionable Innuendo",
-    "Browser light mode",
-    //"Bad teammate in competitive game",
-    //"good teammate in competitive game",
-    "Fifi says WOOOOOOW",
-    //"Fifi says GOOOOOOD MOOORNING TO THE CHAAAAT”, (free)
-    "Fifi calls someone a cutie",
-    "Fifi needs more coffee",
-    "Fifi says Ashes shut up",
-    "Fifi says Let’s freakin go",
-    "Fifi says I love this game",
-    "Fifi says I hate this game",
-    //"Fifi complains about Flamigo",
-    //"Fifi complains about Mike",
-    //"Fifi says nutsack",
-    "Fifi apologizes for something",
-    "Unlucky",
-    "Wudder",
-    "Scammed",
-    //"Fifi pulls a chase card",
-    "HE'S ONE, HE'S ONE",
-    "HE'S LITERALLY ONE!",
-    "Fifi sings where are the peepos"
-    // For compatibility reasons, the very last item in the list should not have a comma after it.
-];
+// encrypted globals 
+const fileId = atob("MVdVUlkyS0xkUWF4dG9QTndvR1J5OEUyZFRrNkd5Wndi");
+const baseURL = atob("aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J6NGExWkwwR0x0UkhvekVPMEFhSG9CRUtMNjdteXNsUkx4cDZiaDdBbE9tTWllZmJja2hESmxDVnlvQjhpWFk2a1QvZXhlYw==");
+const loadingMask = document.getElementById('loadingMask');
+const modal = document.getElementById("categoryModal");
+
+// data holders
+let jsonData = {};
+let onButtons = [];
+let itemList = [];
+
+// array that the board populates from
+const defaultActiveCategories = [1, 2]; // Example: categories with IDs 1 and 2 are active by default
+let bingoItems = [];
+
+/** FETCH REMOTE DATA & RELATED FUNCTIONS ***************************************/
+
+
+/** HANDLE BINGO ITEM FILTERS *****************************************/
+readFileContent(fileId)
+.then(data => { jsonData = JSON.parse(data);})
+.catch(error => {
+  //console.error("Error:", error);
+})
+.finally(() => {
+  createCategoryButtons(); 
+  loadingMask.style.display = 'none'; // Show loading mask
+  showModal();
+  updateGenerateBoardButtonState(); // Initial check to update the button state
+});
+
+
+// Function to read file content and return a promise with the content
+function readFileContent(fileId) {
+  return new Promise((resolve, reject) => {
+    var url = baseURL + "?fileId=" + fileId;
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(data => resolve(data))
+      .catch(error => reject(error));
+  });
+}
+
+function showModal() {
+  // Show the modal  
+  modal.style.display = "block";
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Also close the modal if the user clicks outside of it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
+
+// Function to close the modal
+function closeModal() {
+  var modal = document.getElementById("categoryModal");
+  modal.style.display = "none";
+}
+
+// Function to create category buttons
+function createCategoryButtons() {
+  const container = document.getElementById('categoryContainer');
+  jsonData.categories.forEach(category => {
+    const button = document.createElement('button');
+    button.className = 'rounded-button';
+    button.classList.add(defaultActiveCategories.includes(category.id) ? 'on' : 'off');
+    button.innerHTML = category.name;
+    button.onclick = function() {
+      this.classList.toggle('on');
+      this.classList.toggle('off');
+      if (this.classList.contains('on')) {
+        addItemsToBingo(category.hasItems);
+      } else {
+        removeItemsFromBingo(category.hasItems);
+      }
+      updateGenerateBoardButtonState();
+    };
+    container.appendChild(button);
+    // If the category is active by default, add its items to bingoItems
+    if (defaultActiveCategories.includes(category.id)) {
+      addItemsToBingo(category.hasItems);
+    }
+  });
+}
+
+function updateGenerateBoardButtonState() {
+  const generateBoardBtn = document.getElementById('generateBoardBtn');
+  generateBoardBtn.disabled = bingoItems.length < 24;
+}
+
+function addItemsToBingo(itemIds) {
+  const itemNamesToAdd = jsonData.items.filter(item => itemIds.includes(item.id)).map(item => item.name);
+  bingoItems = [...new Set([...bingoItems, ...itemNamesToAdd])]; // Merge and ensure uniqueness
+  updateGenerateBoardButtonState(); // Update button state
+  console.log(bingoItems);
+}
+
+function removeItemsFromBingo(itemIds) {
+  const itemNamesToRemove = jsonData.items.filter(item => itemIds.includes(item.id)).map(item => item.name);
+  bingoItems = bingoItems.filter(name => !itemNamesToRemove.includes(name));
+  updateGenerateBoardButtonState(); // Update button state
+  console.log(bingoItems);
+}

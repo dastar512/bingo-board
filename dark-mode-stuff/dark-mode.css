@@ -31,3 +31,106 @@ body.dark-mode .rules-section {
     background-color: #104046;
     border-color: #bbb;
 }
+
+/* The Modal (background) */
+body.dark-mode .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  body.dark-mode .modal-content {    
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  body.dark-mode #generateBoardBtn {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally with top margin for spacing */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #327fd0; /* Blue */
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0; /* Remove rounding */
+  }
+  
+  body.dark-mode #generateBoardBtn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  /* The Close Button */
+  body.dark-mode .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  body.dark-mode .close:hover,
+  body.dark-mode .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  body.dark-mode .rounded-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  body.dark-mode .on {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  body.dark-mode .off {
+    background-color: #f44336; /* Red */
+  }
+  
+  body.dark-mode .loading-mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack children vertically */
+    text-align: center; /* Center the text horizontally */
+    font-size: 20px;
+    color: white; /* Specify text color for visibility */
+  }
+  
+  body.dark-mode .loading-mask img {
+    /* Adjust as necessary for your specific GIF */
+    max-width: 100px; /* Example size */
+    max-height: 100px;
+    margin-bottom: 10px;
+  }
