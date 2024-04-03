@@ -10,7 +10,7 @@ let onButtons = [];
 let itemList = [];
 
 // array that the board populates from
-const defaultActiveCategories = [1, 2]; // Example: categories with IDs 1 and 2 are active by default
+const defaultActiveCategories = [3,5,6,8]; // Example: categories with IDs 1 and 2 are active by default
 let bingoItems = [];
 
 /** FETCH REMOTE DATA & RELATED FUNCTIONS ***************************************/
