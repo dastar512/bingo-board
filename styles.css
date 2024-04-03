@@ -171,11 +171,13 @@ button {
 
 /* Modal Content */
 .modal-content {  
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  background-color: #422e59;
+  margin: 15% auto;
+  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 60%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -209,29 +211,35 @@ button {
 
 #generateBoardBtn {
   display: block;
-  margin: 20px auto; /* Center the button horizontally with top margin for spacing */
+  margin: 20px auto;
+  /* Center the button horizontally with top margin for spacing */
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #327fd0; /* Blue */
+  background-color: #9D0B9D;
+  /* Blue */
   color: white;
   border: none;
   outline: none;
-  border-radius: 0; /* Remove rounding */
+  border-radius: 0;
+  /* Remove rounding */
 }
 
 #generateBoardBtn:disabled {
-  background-color: #cccccc;
+  color: #525252;
+  background-color: #E5F5FF;
   cursor: not-allowed;
 }
 
 
 .on {
-  background-color: #4CAF50; /* Green */
+  color: #363636;
+  background-color: #F0D000; 
 }
 
 .off {
-  background-color: #f44336; /* Red */
+  color: #4A4A4A;
+  background-color: #D1EDFF;
 }
 
 .loading-mask {
